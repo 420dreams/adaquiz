@@ -1,37 +1,35 @@
 <!doctype html>
 <html lang="fr">
-  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdaQuiz</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  
-<body>
-     <header>
-          <p class="logo">AdaQuiz</p>
-     </header>
 
-  <!-- ═══════════════════════════════════════
+  <body>
+    <header>
+      <p class="logo">AdaQuiz</p>
+    </header>
+
+    <!-- ═══════════════════════════════════════
        ÉCRAN 1 — ACCUEIL
        Affiché au départ. Caché quand on clique sur "Commencer".
   ════════════════════════════════════════ -->
-    
-  <section id="ecran-accueil" class="ecran">
-     <img src="images/img1.jpeg" alt="illustration du quiz HTML">
-     <h1>Quiz HTML</h1>
-     <p>Teste tes connaissances en HTML !</p>
-     <button id="btn-commencer">Commencer</button>
-  </section>
-    
-  <!-- ═══════════════════════════════════════
+
+    <section id="ecran-accueil" class="ecran">
+      <img src="images/img1.jpeg" alt="illustration du quiz HTML" />
+      <h1>Quiz HTML</h1>
+      <p>Teste tes connaissances en HTML !</p>
+      <button id="btn-commencer">Commencer</button>
+    </section>
+
+    <!-- ═══════════════════════════════════════
        ÉCRAN 2 — QUESTION
        Caché au départ. Affiché pendant le quiz.
   ════════════════════════════════════════ -->
-    
+
     <section id="ecran-question" class="ecran cache">
-  
       <main>
         <h2>Question 1/12</h2>
         <article>
@@ -64,22 +62,19 @@
         <button>valider</button>
       </main>
     </section>
-  <!-- ═══════════════════════════════════════
+    <!-- ═══════════════════════════════════════
        ÉCRAN 3 — RÉSULTATS
        Caché au départ. Affiché à la fin du quiz.
   ════════════════════════════════════════ -->
-  <section id="ecran-resultats" class="ecran cache">
+    <section id="ecran-resultats" class="ecran cache">
       <h2 id="score">7 / 10</h2>
-     <p id="message">Bien joué ! Tu connais bien le HTML</p>
-     <img src="" alt="">
-     <button id="btn-rejouer">Rejouer</button>
-
-  </section>
-  <footer>
-     <p>Merci d'avoir joué</p>
-  </footer>
-  <script src="script.js" defer></script>
- 
-</body>
-
+      <p id="message">Bien joué ! Tu connais bien le HTML</p>
+      <img src="images/image2.jpeg" alt="Trophée et confettis pour célébrer" />
+      <button id="btn-rejouer">Rejouer</button>
+    </section>
+    <footer>
+      <p>Merci d'avoir joué</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>
