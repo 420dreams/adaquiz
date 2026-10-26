@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Balise title dans le head">
+<title>Balise title dans le head</title>
+<circle cx="200" cy="150" r="128" fill="#FFFFFF" opacity="0.18"/>
+<rect x="58" y="70" width="8" height="16" rx="3" fill="#E3B23C" transform="rotate(25 62 78)"/><rect x="335" y="60" width="8" height="16" rx="3" fill="#2457E6" transform="rotate(-20 339 68)"/><circle cx="80" cy="235" r="5" fill="#E05A5A"/><circle cx="330" cy="240" r="4" fill="#FFFFFF"/><rect x="345" y="170" width="7" height="14" rx="3" fill="#E05A5A" transform="rotate(40 348 177)"/><rect x="45" y="150" width="7" height="14" rx="3" fill="#2457E6" transform="rotate(-35 48 157)"/><path d="M70 110 Q70 120 80 120 Q70 120 70 130 Q70 120 60 120 Q70 120 70 110Z" fill="#FFFFFF"/><path d="M330 106 Q330 115 339 115 Q330 115 330 124 Q330 115 321 115 Q330 115 330 106Z" fill="#FFFFFF"/><path d="M300 33 Q300 40 307 40 Q300 40 300 47 Q300 40 293 40 Q300 40 300 33Z" fill="#E3B23C"/>
+
+<rect x="60" y="78" width="280" height="160" rx="14" fill="#FFFFFF" stroke="#1B2A80" stroke-width="5"/>
+<path d="M60 92 a14 14 0 0 1 14 -14 h252 a14 14 0 0 1 14 14 v32 h-280z" fill="#1B2A80"/>
+<path d="M78 124 v-22 a10 10 0 0 1 10 -10 h110 a10 10 0 0 1 10 10 v22z" fill="#EDE8A6"/>
+<text x="143" y="116" text-anchor="middle" font-size="17" fill="#1B2A80" font-family="Arial, Helvetica, sans-serif" font-weight="bold">&lt;title&gt;</text>
+<text x="226" y="114" font-size="20" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="bold">+</text>
+<rect x="85" y="146" width="230" height="14" rx="7" fill="#C9CEF7"/>
+<rect x="85" y="172" width="180" height="14" rx="7" fill="#C9CEF7"/>
+<rect x="85" y="198" width="200" height="14" rx="7" fill="#C9CEF7"/>
+<path d="M143 58 v20" stroke="#E3B23C" stroke-width="5" stroke-linecap="round"/><rect x="93.0" y="22" width="100" height="34" rx="17.0" fill="#E3B23C" stroke="#1B2A80" stroke-width="3"/><text x="143" y="45.48" text-anchor="middle" font-size="18" fill="#1B2A80" font-family="Arial, Helvetica, sans-serif" font-weight="bold">&lt;head&gt;</text>
+</svg>

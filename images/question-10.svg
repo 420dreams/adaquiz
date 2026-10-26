@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Structure sémantique">
+<title>Structure sémantique</title>
+<circle cx="200" cy="150" r="128" fill="#FFFFFF" opacity="0.18"/>
+<rect x="58" y="70" width="8" height="16" rx="3" fill="#E3B23C" transform="rotate(25 62 78)"/><rect x="335" y="60" width="8" height="16" rx="3" fill="#2457E6" transform="rotate(-20 339 68)"/><circle cx="80" cy="235" r="5" fill="#E05A5A"/><circle cx="330" cy="240" r="4" fill="#FFFFFF"/><rect x="345" y="170" width="7" height="14" rx="3" fill="#E05A5A" transform="rotate(40 348 177)"/><rect x="45" y="150" width="7" height="14" rx="3" fill="#2457E6" transform="rotate(-35 48 157)"/><path d="M70 110 Q70 120 80 120 Q70 120 70 130 Q70 120 60 120 Q70 120 70 110Z" fill="#FFFFFF"/><path d="M330 106 Q330 115 339 115 Q330 115 330 124 Q330 115 321 115 Q330 115 330 106Z" fill="#FFFFFF"/><path d="M300 33 Q300 40 307 40 Q300 40 300 47 Q300 40 293 40 Q300 40 300 33Z" fill="#E3B23C"/>
+
+<rect x="110" y="40" width="180" height="220" rx="16" fill="#FFFFFF" stroke="#1B2A80" stroke-width="5"/>
+<rect x="125" y="55" width="150" height="34" rx="8" fill="#2457E6"/>
+<text x="200" y="78" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="bold">header</text>
+<rect x="120" y="100" width="160" height="104" rx="10" fill="#EDE8A6" stroke="#E3B23C" stroke-width="6"/>
+<text x="200" y="128" text-anchor="middle" font-size="18" fill="#1B2A80" font-family="Arial, Helvetica, sans-serif" font-weight="bold">article</text>
+<rect x="140" y="142" width="120" height="10" rx="5" fill="#1B2A80" opacity="0.7"/>
+<rect x="140" y="162" width="95" height="10" rx="5" fill="#1B2A80" opacity="0.4"/>
+<rect x="140" y="182" width="110" height="10" rx="5" fill="#1B2A80" opacity="0.4"/>
+<rect x="125" y="214" width="150" height="32" rx="8" fill="#1B2A80"/>
+<text x="200" y="235" text-anchor="middle" font-size="15" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="bold">footer</text><path d="M286 90 Q286 104 300 104 Q286 104 286 118 Q286 104 272 104 Q286 104 286 90Z" fill="#E3B23C"/>
+</svg>
