@@ -1,44 +1,62 @@
 [
   {
     "id": 1,
-    "question": "Quel pays a une frontière avec lui-même ?",
-    "reponses": ["L'Afrique du Sud", "Le Vatican", "Le Lesotho", "Saint-Marin"],
-    "bonne_reponse": 2
+    "question": "Que signifie HTML ?",
+    "reponses": ["HyperText Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
+    "bonne_reponse": 0
   },
   {
     "id": 2,
-    "question": "Combien de cœurs a une pieuvre ?",
-    "reponses": ["1", "2", "3", "5"],
+    "question": "Quelle balise crée le titre le plus important d'une page ?",
+    "reponses": ["<title>", "<h6>", "<h1>", "<header>"],
     "bonne_reponse": 2
   },
   {
     "id": 3,
-    "question": "Quel est le seul mammifère qui ne peut pas sauter ?",
-    "reponses": ["Le rhinocéros", "L'hippopotame", "L'éléphant", "Le morse"],
-    "bonne_reponse": 2
+    "question": "Quelle balise sert à créer un lien ?",
+    "reponses": ["<link>", "<a>", "<href>", "<url>"],
+    "bonne_reponse": 1
   },
   {
     "id": 4,
-    "question": "À quelle vitesse pousse un ongle en moyenne ?",
-    "reponses": ["0,1 mm par jour", "0,3 mm par semaine", "3 mm par mois", "1 cm par mois"],
-    "bonne_reponse": 2
+    "question": "Quel attribut indique le chemin d'une image ?",
+    "reponses": ["href", "alt", "link", "src"],
+    "bonne_reponse": 3
   },
   {
     "id": 5,
-    "question": "Quelle est la durée de vie d'un globule rouge ?",
-    "reponses": ["7 jours", "30 jours", "120 jours", "1 an"],
-    "bonne_reponse": 2
+    "question": "À quoi sert l'attribut alt d'une image ?",
+    "reponses": ["Changer sa taille", "Décrire l'image pour l'accessibilité", "Ajouter une bordure", "Aligner l'image"],
+    "bonne_reponse": 1
   },
   {
     "id": 6,
-    "question": "Quel animal dort debout et rêve en courant ?",
-    "reponses": ["Le cheval", "La girafe", "Le cheval de mer", "Le lapin"],
+    "question": "Quelle balise crée une liste non ordonnée ?",
+    "reponses": ["<ul>", "<ol>", "<li>", "<list>"],
     "bonne_reponse": 0
   },
   {
     "id": 7,
-    "question": "Combien de fois par jour bat un cœur humain en moyenne ?",
-    "reponses": ["50 000", "100 000", "200 000", "500 000"],
+    "question": "Où place-t-on la balise <title> ?",
+    "reponses": ["Dans le <body>", "Dans le <footer>", "Dans le <head>", "Dans le <main>"],
+    "bonne_reponse": 2
+  },
+   {
+    "id": 8,
+    "question": "Quelle balise insère un saut de ligne ?",
+    "reponses": ["<lb>", "<break>", "<newline>", "<br>"],
+    "bonne_reponse": 3
+  },
+   {
+    "id": 9,
+    "question": "Quelle balise relie une feuille de style CSS à la page ?",
+    "reponses": ["<style>", "<link>", "<css>", "<script>"],
     "bonne_reponse": 1
+  },
+   {
+    "id": 10,
+    "question": "Laquelle de ces balises est une balise sémantique de structure ?",
+    "reponses": ["<div>", "<span>", "<b>", "<article>"],
+    "bonne_reponse": 3
   }
 ]
