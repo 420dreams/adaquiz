@@ -10,7 +10,7 @@
 body {
   font-family:Arial, Helvetica, sans-serif;
   background-color: #c9b6f2;
-  color:#222222;
+  color:#3d38a3;
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
@@ -18,7 +18,6 @@ body {
 
 header {
   background-color: #fff59d;
-  color: #111111;
   height: 60px;
   display: flex;
   align-items: center;
@@ -26,6 +25,7 @@ header {
 }
 
 .logo {
+  color:#3d38a3;
   font-size: 28px;
   font-weight: bold;
   font-family: 'Brush Script MT' ,cursive;
@@ -35,27 +35,40 @@ footer {
   font-family: 'Brush Script MT' ,cursive;
   font-weight: bold;
   background-color: #fff59d;
-  color: #111111;
   text-align: center;
   padding: 20px;
 }
 
 img {
   width: 100%;
-  height: 180%;
+  height: 180px;
   object-fit: cover;
+  border-radius: 16px;
 }
 
 h1 {
+  color:#3d38a3;
   font-size: 24px;
   text-align: center;
 }
 
  #ecran-accueil p {
+  color:#3d38a3;
   font-size: 14px;
   text-align: center;
 
 }
+
+#score {
+  font-size:48px;
+  text-align:center;
+
+}
+
+#message {
+    font-size:14px;
+    text-align:center;
+  }
 
 .ecran {
   flex: 1;
@@ -78,7 +91,6 @@ button {
   border-radius: 50px;
   background-color: #3d38a3;
   color: white;
-  font-weight: bold;
   text-transform: uppercase;
   margin-top: 40px;
   cursor: pointer;
@@ -88,6 +100,84 @@ button {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .ecran {
+    max-width:1000px;
+  }
+
+  #ecran-accueil p {
+    font-size: 18px;
+  }
+
+ #ecran-accueil {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 40px;
+  align-items: center;
+  grid-template-rows: 1fr auto auto auto 1fr;
+ }
+
+ #ecran-accueil img {
+  grid-column: 1;
+   grid-row: 1 /6;
+   height: auto;
+   object-fit: contain;
+ }
+  
+ #ecran-accueil h1 {
+  grid-column: 2;
+  grid-row: 2;
+ }
+
+ #ecran-accueil p {
+   grid-column: 2;
+  grid-row: 3;
+ }
+
+ #ecran-accueil button {
+  grid-column: 2;
+  grid-row: 4;
+ }
+
+ #ecran-accueil.cache {
+  display: none;
+ }
+ 
+  #ecran-resultats {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 40px;
+  align-items: center;
+  grid-template-rows: 1fr auto auto auto 1fr;
+ }
+
+ #ecran-resultats img {
+  grid-column: 1;
+   grid-row: 1 /6;
+   height: auto;
+   object-fit: contain;
+ }
+ #score {
+  grid-column: 2;
+  grid-row: 2;
+ } 
+
+ #message {
+  grid-column: 2;
+  grid-row: 3;
+ }
+
+ #ecran-resultats button {
+  grid-column: 2;
+  grid-row: 4;
+ }
+
+ #ecran-resultats.cache {
+  display: none;
+
+}
+}
+ 
 
 
 .cache {
