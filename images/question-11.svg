@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Contenu visible du body">
+<title>Contenu visible du body</title>
+<circle cx="200" cy="150" r="128" fill="#FFFFFF" opacity="0.18"/>
+<rect x="58" y="70" width="8" height="16" rx="3" fill="#E3B23C" transform="rotate(25 62 78)"/><rect x="335" y="60" width="8" height="16" rx="3" fill="#2457E6" transform="rotate(-20 339 68)"/><circle cx="80" cy="235" r="5" fill="#E05A5A"/><circle cx="330" cy="240" r="4" fill="#FFFFFF"/><rect x="345" y="170" width="7" height="14" rx="3" fill="#E05A5A" transform="rotate(40 348 177)"/><rect x="45" y="150" width="7" height="14" rx="3" fill="#2457E6" transform="rotate(-35 48 157)"/><path d="M70 110 Q70 120 80 120 Q70 120 70 130 Q70 120 60 120 Q70 120 70 110Z" fill="#FFFFFF"/><path d="M330 106 Q330 115 339 115 Q330 115 330 124 Q330 115 321 115 Q330 115 330 106Z" fill="#FFFFFF"/><path d="M300 33 Q300 40 307 40 Q300 40 300 47 Q300 40 293 40 Q300 40 300 33Z" fill="#E3B23C"/>
+<rect x="65" y="50" width="270" height="200" rx="14" fill="#FFFFFF" stroke="#1B2A80" stroke-width="5"/><path d="M65 64 a14 14 0 0 1 14 -14 h242 a14 14 0 0 1 14 14 v16 h-270 z" fill="#1B2A80"/><circle cx="83" cy="65" r="5" fill="#E05A5A"/><circle cx="99" cy="65" r="5" fill="#E3B23C"/><circle cx="115" cy="65" r="5" fill="#FFFFFF"/>
+<rect x="85" y="92" width="230" height="140" rx="10" fill="#E9EBFD" stroke="#2457E6" stroke-width="3" stroke-dasharray="7 6"/><rect x="100" y="108" width="90" height="70" rx="8" fill="#C9CEF7"/><circle cx="167.5" cy="129.0" r="9.1" fill="#E3B23C"/><path d="M100 178 L131.5 134.6 L154.0 160.5 L164.8 148.6 L190 178 Z" fill="#1B2A80"/><path d="M113.5 178 L131.5 151.4 L149.5 178 Z" fill="#2457E6"/>
+<rect x="205" y="112" width="95" height="14" rx="7" fill="#1B2A80"/>
+<rect x="205" y="136" width="75" height="10" rx="5" fill="#C9CEF7"/>
+<rect x="205" y="156" width="85" height="10" rx="5" fill="#C9CEF7"/>
+<rect x="100" y="195" width="160" height="10" rx="5" fill="#C9CEF7"/>
+<circle cx="318" cy="228" r="30" fill="#E3B23C" stroke="#1B2A80" stroke-width="4"/>
+<path d="M298 228 q20 -20 40 0 q-20 20 -40 0z" fill="#FFFFFF" stroke="#1B2A80" stroke-width="3"/>
+<circle cx="318" cy="228" r="6" fill="#1B2A80"/>
+</svg>
