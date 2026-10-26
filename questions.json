@@ -58,18 +58,5 @@
     "question": "Laquelle de ces balises est une balise sémantique de structure ?",
     "reponses": ["<div>", "<span>", "<b>", "<article>"],
     "bonne_reponse": 3
-  },
-  {
-    "id": 11,
-    "question": "Quelle balise contient le contenu visible de la page ?",
-    "reponses": ["<head>", "<body>", "<html>", "<meta>"],
-    "bonne_reponse": 1
-  },
-  {
-    "id": 12,
-    "question": "Quelle balise sert à créer un formulaire ?",
-    "reponses": ["<input>", "<button>", "<form>", "<label>"],
-    "bonne_reponse": 2
   }
-
 ]
