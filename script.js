@@ -10,6 +10,10 @@
 // Tu n'as pas besoin de les modifier.
 
 const btnCommencer = document.getElementById('btn-commencer')
+const listeReponses = document.getElementById('liste-reponses')
+const ecranAccueil = document.getElementById('ecran-accueil')
+const ecranQuestion = document.getElementById('ecran-question')
+const ecranResultats = document.getElementById('ecran-resultats')
 //... Crée autant de constantes que d'éléments HTML à récupérer
 
 
@@ -68,6 +72,15 @@ const afficher = (ecran) => {
 
 const afficherQuestion = () => {
   // Écris ton code ici
+  const questionCourante = questions[indexCourant]
+  listeReponses.innerHTML = ''
+  questionCourante.reponses.forEach((reponse,index) => {
+    const bouton = document.createElement('button')
+    bouton.textContent = reponse
+    listeReponses.appendChild(bouton)
+    
+  });
+
 }
 
 
@@ -110,3 +123,7 @@ const afficherResultats = () => {
 //   - btn-rejouer   → remettre indexCourant et score à 0, revenir à l'accueil
 
 // Écris ton code ici
+btnCommencer.addEventListener('click', () => {
+  afficher(ecranQuestion)
+  afficherQuestion()
+})
