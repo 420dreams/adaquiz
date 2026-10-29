@@ -145,6 +145,9 @@ const afficherQuestion = () => {
   numeroQuestion.textContent = "Question " + (indexCourant + 1) + " / " + questions.length
   texteQuestion.textContent = questionCourante.question
   imageQuestiojn.src = questionCourante.image
+  imageQuestiojn.style.animation = 'none'
+  imageQuestiojn.offsetHeight
+  imageQuestiojn.style.animation= ''
   btnSuivant.classList.add('cache')
   listeReponses.innerHTML = ''
   questionCourante.reponses.forEach((reponse,index) => {
@@ -191,6 +194,20 @@ const verifierReponse = (indexChoisi) => {
 }
 
 
+
+const lancerConfettis = () => {
+  const couleurs = ['#ffd60a', '#3b2eff', '#ff6fae', '#ffffff']
+  for (let i = 0; i < 80; i++) {
+    const confetti = document.createElement('span')
+    confetti.classList.add('confetti')
+    confetti.style.left = Math.random() * 100 + 'vw'
+    confetti.style.backgroundColor = couleurs[Math.floor(Math.random() * couleurs.length)]
+    confetti.style.animationDelay = Math.random() * 1.5 + 'S'
+    document.body.appendChild(confetti)
+    setTimeout(() => confetti.remove(), 5000)
+  
+  }
+}
 // ── TODO : afficherResultats ─────────────────
 // Cette fonction est appelée quand toutes les questions ont été répondues.
 //
@@ -207,10 +224,15 @@ const afficherResultats = () => {
     messageFin.textContent = "Bien joué ! tu connais bien le HTML"
     imageResultat.src = "images/score-haut.jpeg"
     imageResultat.alt = "Trophée et confettis pour célébrer"
+    imageResultat.classList.add('victoire')
+    ecranResultats.classList.remove('defaite')
+    //lancerConfettis()
   } else {
     messageFin.textContent = "Courage , tu peux faire mieux !"
     imageResultat.src = "images/score-faible.svg"
     imageResultat.alt = "Illustration d'encouragement"
+    imageResultat.classList.remove('victoire')
+    ecranResultats.classList.add('defaite')
   }
 }
 

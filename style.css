@@ -323,3 +323,117 @@ button {
 #liste-reponses .incorrecte {
   background-color: rgb(251, 225, 225);
 }
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) rotate(-8deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) rotate(4deg);
+  }
+  65% {
+    transform: translateY(-20px) rotate(-2deg);
+  }
+  80% {
+    transform: translateY(0) rotate(1deg);
+  }
+  90% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+ @keyframes rebond {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+} 
+
+
+#image-question,
+#image-resultat {
+  animation: apparition 0.6s ease-out;
+}
+#image-resultat.victoire {
+  animation: apparition 0.6s ease-out, rebond 0.5s ease-in-out 0.6s infinite alternate;
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 10px;
+  height: 16px;
+  border-radius: 3px;
+  pointer-events: none;
+  animation: chute 3s linear forwards;
+}
+
+@keyframes chute {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+
+@keyframes tremblement {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-10px);
+  }
+  40%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes glisser {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulsation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+#ecran-resultats.defaite {
+  animation: tremblement 0.5s ease-in-out;
+}
+
+#ecran-accueil img {
+  animation: apparition 1s ease-out;
+}
+
+#ecran-accueil h1 {
+  animation: glisser 0.6s ease-out 0.3s both;
+}
+
+#ecran-accueil p {
+  animation: glisser 0.6s ease-out 0.5s both;
+}
+
+#ecran-accueil button {
+  animation: glisser 0.6s ease-out 0.7s both, pulsation 1.5s ease-in-out 1.5s infinite;
+}
+
+#btn-suivant, 
+#btn-rejouer {
+  animation:glisser 0.4s ease-out 0.7s both, pulsation 1.5s ease-in-out 0.4s infinite;
+}
+
