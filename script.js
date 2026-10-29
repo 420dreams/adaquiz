@@ -10,6 +10,12 @@
 // Tu n'as pas besoin de les modifier.
 
 const btnCommencer = document.getElementById('btn-commencer')
+const listeReponses = document.getElementById('liste-reponses')
+const ecranAccueil = document.getElementById('ecran-accueil')
+const ecranQuestion = document.getElementById('ecran-question')
+const ecranResultats = document.getElementById('ecran-resultats')
+const texteQuestion = document.getElementById('texte-question')
+const btnSuivant = document.getElementById('btn-suivant')
 //... Crée autant de constantes que d'éléments HTML à récupérer
 
 
@@ -17,23 +23,84 @@ const btnCommencer = document.getElementById('btn-commencer')
 // Ces variables stockent les données en cours de partie.
 // Tu n'as pas besoin de les modifier.
 
-let questions = []   // tableau des questions chargées depuis le JSON
+let questions = [
+  {
+    id: 1,
+    question: "Que signifie HTML ?",
+    image: "images/question-1.svg",
+    reponses: ["HyperText Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
+    bonne_reponse: 0
+  },
+  {
+    id: 2,
+    question: "Quelle balise crée le titre le plus important d'une page ?",
+    image: "images/question-2.svg",
+    reponses: ["<title>", "<h6>", "<h1>", "<header>"],
+    bonne_reponse: 2
+  },
+  {
+    id: 3,
+    question: "Quelle balise sert à créer un lien ?",
+    image: "images/question-3.svg",
+    reponses: ["<link>", "<a>", "<href>", "<url>"],
+    bonne_reponse: 1
+  },
+  {
+    id: 4,
+    question: "Quel attribut indique le chemin d'une image ?",
+    image: "images/question-4.svg",
+    reponses: ["href", "alt", "link", "src"],
+    bonne_reponse: 3
+  },
+  {
+    id: 5,
+    question: "À quoi sert l'attribut alt d'une image ?",
+    image: "images/question-5.svg",
+    reponses: ["Changer sa taille", "Décrire l'image pour l'accessibilité", "Ajouter une bordure", "Aligner l'image"],
+    bonne_reponse: 1
+  },
+  {
+    id: 6,
+    question: "Quelle balise crée une liste non ordonnée ?",
+    image: "images/question-6.svg",
+    reponses: ["<ul>", "<ol>", "<li>", "<list>"],
+    bonne_reponse: 0
+  },
+  {
+    id: 7,
+    question: "Où place-t-on la balise <title> ?",
+    image: "images/question-7.svg",
+    reponses: ["Dans le <body>", "Dans le <footer>", "Dans le <head>", "Dans le <main>"],
+    bonne_reponse: 2
+  },
+   {
+    id: 8,
+    question: "Quelle balise insère un saut de ligne ?",
+    image: "images/question-8.svg",
+    reponses: ["<lb>", "<break>", "<newline>", "<br>"],
+    bonne_reponse: 3
+  },
+   {
+    id: 9,
+    question: "Quelle balise relie une feuille de style CSS à la page ?",
+    image: "images/question-9.svg",
+    reponses: ["<style>", "<link>", "<css>", "<script>"],
+    bonne_reponse: 1
+  },
+   {
+    id: 10,
+    question: "Laquelle de ces balises est une balise sémantique de structure ?",
+    image: "images/question-10.svg",
+    reponses: ["<div>", "<span>", "<b>", "<article>"],
+    bonne_reponse: 3
+  }
+]
+  // tableau des questions chargées depuis le JSON
 let indexCourant = 0    // numéro de la question en cours (commence à 0)
 let score = 0    // nombre de bonnes réponses
 
 
-// ── Chargement du JSON ───────────────────────
-// Cette fonction est déjà écrite.
-// Elle charge le fichier questions.json et remplit l'écran d'accueil.
 
-fetch('questions.json')
-  .then(response => response.json())
-  .then(data => {
-    questions = data
-    titreQuiz.textContent = 'AdaQuiz'
-    descriptionQuiz.textContent = 'Ton quiz personnalisé'
-    nbQuestions.textContent = questions.length + ' questions'
-  })
 
 
 // ── Navigation entre les écrans ──────────────
@@ -68,6 +135,17 @@ const afficher = (ecran) => {
 
 const afficherQuestion = () => {
   // Écris ton code ici
+  const questionCourante = questions[indexCourant]
+  texteQuestion.textContent =questionCourante.question
+  btnSuivant.classList.add('cache')
+  listeReponses.innerHTML = ''
+  questionCourante.reponses.forEach((reponse,index) => {
+    const bouton = document.createElement('button')
+    bouton.textContent = reponse
+    listeReponses.appendChild(bouton)
+    
+  });
+
 }
 
 
@@ -110,3 +188,7 @@ const afficherResultats = () => {
 //   - btn-rejouer   → remettre indexCourant et score à 0, revenir à l'accueil
 
 // Écris ton code ici
+btnCommencer.addEventListener('click', () => {
+  afficher(ecranQuestion)
+  afficherQuestion()
+})
