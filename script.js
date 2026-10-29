@@ -22,6 +22,7 @@ const messageFin = document.getElementById('message-fin')
 const numeroQuestion = document.getElementById('numero-question')
 const imageQuestiojn = document.getElementById('image-question')
 const imageResultat = document.getElementById('image-resultat')
+const logo = document.getElementById('logo')
 //... Crée autant de constantes que d'éléments HTML à récupérer
 
 
@@ -193,7 +194,7 @@ const verifierReponse = (indexChoisi) => {
   btnSuivant.classList.remove('cache')
 }
 
-
+                  
 
 const lancerConfettis = () => {
   const couleurs = ['#ffd60a', '#3b2eff', '#ff6fae', '#ffffff']
@@ -202,7 +203,7 @@ const lancerConfettis = () => {
     confetti.classList.add('confetti')
     confetti.style.left = Math.random() * 100 + 'vw'
     confetti.style.backgroundColor = couleurs[Math.floor(Math.random() * couleurs.length)]
-    confetti.style.animationDelay = Math.random() * 1.5 + 'S'
+    confetti.style.animationDelay = Math.random() * 1.5 + 's'
     document.body.appendChild(confetti)
     setTimeout(() => confetti.remove(), 5000)
   
@@ -226,7 +227,7 @@ const afficherResultats = () => {
     imageResultat.alt = "Trophée et confettis pour célébrer"
     imageResultat.classList.add('victoire')
     ecranResultats.classList.remove('defaite')
-    //lancerConfettis()
+    lancerConfettis()
   } else {
     messageFin.textContent = "Courage , tu peux faire mieux !"
     imageResultat.src = "images/score-faible.svg"
@@ -265,3 +266,11 @@ btnRejouer.addEventListener('click',() => {
   score = 0
   afficher(ecranAccueil)
 } )
+
+logo.addEventListener('dblclick',() => {
+  logo.classList.add('tourne')
+   
+})
+logo.addEventListener('animationend', () => {
+  logo.classList.remove('tourne')
+})

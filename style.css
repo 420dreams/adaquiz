@@ -412,6 +412,23 @@ button {
   }
 }
 
+@keyframes tourner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo.tourne {
+  animation: tourner 0.8s ease-in-out;
+}
+
 #ecran-resultats.defaite {
   animation: tremblement 0.5s ease-in-out;
 }
